@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Place</title>
+    <link rel="stylesheet" href="place.css">
+    <script src="place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Beautiful Place</h1>
+    </header>
+    <main>
+        <section id="hero">
+            <picture>
+                <source srcset="images/place-large.webp" media="(min-width: 768px)">
+                <img src="images/black.jpg" alt="Beautiful Place Image">
+            </picture>
+        </section>
+        <section id="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Population:</strong> 1,000,000</li>
+                <li><strong>Area:</strong> 500 sq km</li>
+                <li><strong>Language:</strong> English</li>
+                <li><strong>Currency:</strong> USD</li>
+                <li><strong>Climate:</strong> Temperate</li>
+            </ul>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <ul>
+                <li><strong>Temperature:</strong> 15°C</li>
+                <li><strong>Humidity:</strong> 60%</li>
+                <li><strong>Wind Speed:</strong> 10 km/h</li>
+                <li id="windchill"><strong>Windchill:</strong> Calculating...</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Beautiful Place - All rights reserved</p>
+        <p id="lastModified">Last modified: </p>
+    </footer>
+</body>
+</html>

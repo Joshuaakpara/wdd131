@@ -3,61 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Rubia Magdalena Francesco">
-    <meta name="author" content="Rubia Magdalena Francesco">
-    <title>WDD 131 - Dynamic Web Fundamentals - Rubia Magdalena Francesco</title>
-    <link rel="stylesheet" href="base.css">
-    <script src="getdates.js"></script>
+    <title>Madagascar</title>
+    <link rel="stylesheet" href="place.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - Joshua *C* Akpara</h1>
-        <nav>
-            <a href="https://www.linkedin.com/in/joshua-akpara-726b8b268/">LinkedIn</a>
-            <a href="https://byui.instructure.com/">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/3?lang=eng">Scripture</a>
-            <a href="#">Final Project</a>
-        </nav>
+        <h1>Madagascar</h1>
     </header>
     <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <p>My name is Joshua Chukwuebuka Akpara, and I am a student at Brigham Young University. I am passionate about web development and constantly seeking to improve my skills. When I am not studying, I enjoy spending time with my family, exploring new technologies, and engaging in outdoor activities</p>
-            <img src="images/image.jpg" alt="Joshua Chukwuebuka Akpara" width="200">
+        <section class="hero">
+            <picture>
+                <source srcset="path/to/hero-image-large.webp" media="(min-width: 800px)">
+                <source srcset="path/to/hero-image-medium.webp" media="(min-width: 600px)">
+                <img src="images/black.jpg" alt="Black Crowned crane">
+            </picture>
         </section>
-        <section class="card">
-            <h2>Aba, Abia state</h2>
-            <p>Aba is a city in the southeast of Nigeria and the commercial centre of Abia State. Upon the creation of
-                Abia State in 1991, Aba was divided into two local government areas: Aba South and Aba North. Aba South
-                is the main city centre of Abia State, located in south-east Nigeria. It is located on the Aba River. Aba
-                is made up of many villages such as Aba-Ukwu, Eziukwu-Aba, Obuda-Aba, Umuokpoji-Aba and other villages
-                that have been merged for administrative convenience. Aba was established by the Ngwa clan of the Igbo
-                people in Nigeria as a market town. Later, a military post was placed there by the British colonial
-                administration[2] in 1901. It lies along the west bank of the Aba River and is at the intersection of
-                roads leading to Port Harcourt, Owerri, Umuahia, Ikot Ekpene, and Ikot-Abasi.[3] The city became a
-                collection point for agricultural products following construction of a British-made railway running
-                through it to Port Harcourt. Aba is a major urban settlement and commercial centre in its region, which
-                is surrounded by small villages and towns. The indigenous people of Aba are the Ngwa. Aba is well known
-                for its craftsmen and also the most populous city in the Southeastern Nigeria. As of 2016, Aba had an
-                estimated population of 2,534,265.[1] The state's slogan is "God's Own State".</p>
-            <img src="images/abaflag.jpg" alt="official Flag of Abia State" width="200">
-            <p>Official Flag of Abia State</p>
-        </section>
-        <aside>
-            <h2>Web Dev Resources</h2>
+        <section class="data">
+            <h2>Data</h2>
             <ul>
-                <li><a href="https://dev.to/">Dev.to Community</a></li>
-                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://www.udemy.com/">Udemy</a></li>
-                <li><a href="https://www.lipsum.com/">Lorem Ipsum Image Placeholder</a></li>
+                <li><strong>Area:</strong> 587,041 km²</li>
+                <li><strong>Population:</strong> 27,691,018</li>
+                <li><strong>Capital:</strong> Antananarivo</li>
+                <li><strong>Languages:</strong> Malagasy, French</li>
+                <li><strong>Currency:</strong> Malagasy Ariary</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +261</li>
+                <li><strong>Internet TLD:</strong> .mg</li>
             </ul>
-        </aside>
+        </section>
+        <section class="weather">
+            <img class="weather-icon" src="images/weather.jpeg" alt="weather icon"width=200>
+            <h2>Weather</h2>
+            <ul>
+                <li><strong>Temperature:</strong> 19°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 5 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+            </ul>
+        </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span>Joshua Chukwuebuka Akpara,Abia State</p>
-        <p id="lastModified"></p>
+        <p>&copy; <span id="year"></span> · Madagascar · Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
